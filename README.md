@@ -15,3 +15,4 @@ TaskMaster is a Java-based dynamic web application designed to provide users wit
 - **JSP (JavaServer Pages):** Used for creating dynamic web pages, allowing the application to generate content dynamically based on user interactions.
 - **Apache Tomcat:** The web server and servlet container that hosts the TaskMaster application.
 - **Eclipse Jersey:** A framework for building RESTful web services, used to manage task data efficiently and provide an improved user experience.
+- **HTML/CSS:** Stylizing the application.
