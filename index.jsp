@@ -35,10 +35,9 @@
                                     <th>Due Date</th>
                                     <th>Action</th>
                                 </tr>
-                                <% List<Task> tasks = (List<Task>) request.getAttribute("tasks"); %>
-                                <%
-                                    for (Task task : tasks) {
-                                %>
+                                <% List<Task> tasks = (List<Task>) request.getAttribute("tasks");
+                                if (tasks != null && !tasks.isEmpty()) {
+                                    for (Task task : tasks) { %>
                                 <tr>
                                     <td class="p-0 text-center">
                                         <div class="custom-checkbox custom-control">
@@ -48,19 +47,23 @@
                                     </td>
                                     <td><%= task.getName() %></td>
                                     <td class="align-middle">
-                                        <div class="progress" data-height="4" data-toggle="tooltip" title data-original-title="<%= task.getProgress() %>" style="height: 4px;">
+                                        <div class="progress" data-height="4" data-toggle="tooltip" data-original-title="<%= task.getProgress() %>" style="height: 4px;">
                                             <div class="progress-bar bg-success" data-width="<%= task.getProgress() %>" style="width: <%= task.getProgress() %>px;"></div>
                                         </div>
                                     </td>
                                     <td><%= task.getDate() %></td>
                                     <td>
                                         <a class="btn btn-primary btn-action mr-1" href="webapi/myresource">Jersey resource</a>
-                                        <a class="btn btn-danger btn-action" data-toggle="tooltip" title data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')" data-original-title="Delete"><i class="fas fa-trash"></i></a>
+                                        <a class="btn btn-danger btn-action" data-toggle="tooltip" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')" data-original-title="Delete"><i class="fas fa-trash"></i></a>
                                     </td>
                                 </tr>
                                 <% 
                                     }
-                                %>
+                                } else { %>
+                                <tr>
+                                    <td colspan="5">No tasks available</td>
+                                </tr>
+                                <% } %>
                             </tbody>
                         </table>
                     </div>
