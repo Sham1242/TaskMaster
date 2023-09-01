@@ -12,7 +12,38 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 </head>
+
 <body>
+	<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+</style>
+
+<body>
+
+<div class="header">
+  <h1>TaskMaster</h1>
+  <p>An Ahtsham Sohail Production</p>
+</div>
+
+</body>
+	
+	</div>
     <div class="container">
         <div class="col-md-12 col-12 col-sm-12">
             <div class="card">
