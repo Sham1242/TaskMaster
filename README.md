@@ -1,6 +1,6 @@
 TaskMaster is a Java-based dynamic web application designed to provide users with a user-friendly and responsive interface for managing their tasks. The application utilizes technologies such as Java, JSP, Apache Tomcat, and Eclipse Jersey to deliver a seamless task management experience.
 
-![alt text](https://bashify.io/images/WT50P2)
+![alt text]([https://bashify.io/images/WT50P2](https://bashify.io/img/4b7563c2a0ecfb4c68ed2ecb8351e010))
 
 ## Features
 
